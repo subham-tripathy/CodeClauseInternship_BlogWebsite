@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Roboto;
+    src: url('RobotoSlab-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    font-family: Roboto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+    background-color: gainsboro;
+    margin-bottom: 30px;
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding: 7px 5px;
+    margin: 0 5px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+#heroArticle {
+    margin: auto;
+    position: relative;
+    width: 1100px;
+}
+
+#heroArticle img {
+    filter: brightness(80%);
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+#heroArticle>div {
+    color: white;
+    width: 80%;
+    margin: auto;
+    text-shadow: 1px 1px 1px black;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 3px solid white;
+    box-shadow: 1px 1px 7px black;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+#secondaryArticle {
+    margin: auto;
+    position: relative;
+    width: 500px;
+}
+
+#secondaryArticle img {
+    filter: brightness(80%);
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+#secondaryArticle>div {
+    text-align: left;
+}
+
+#secondaryArticle>div h1 {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+#trending,
+#editorPicks {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    margin: 100px auto;
+}
+
+#trending>div,
+#editorPicks>div {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#trending #prevNext button,
+#editorPicks #prevNext button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#trending #prevNext button img,
+#editorPicks #prevNext button img {
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+#otherArticles {
+    width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+#otherArticles hr {
+    margin: 20px 0;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+#otherArticles .postedOn {
+    color: blue;
+}
+
+#otherArticles h2 {
+    font-weight: normal;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 100px;
+    padding: 10px 0;
+    color: gainsboro;
+    background-color: gray;
+}
+
+footer span {
+    font-size: 20px;
+}

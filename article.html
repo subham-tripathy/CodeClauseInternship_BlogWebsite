@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="article.css">
+    <title>Article - 1</title>
+</head>
+
+<body>
+    <nav>
+        <h1><a href="./">Logo</a></h1>
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="#">All Blogs</a></li>
+            <li><a href="#">Topics</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div id="top">
+            <h1></h1>
+            <p class="date"></p>
+        </div>
+        <img src="">
+        <div id="paragraphs"></div>
+    </section>
+
+    <form id="newsLetter">
+        Get updates from us
+        <input type="email" placeholder="Enter you mail to receive notifications...." required>
+        <button>Subscribe</button>
+    </form>
+
+
+
+    <footer>
+        Legal
+        <span>|</span>
+        Privacy Notice
+        <span>|</span>
+        Access to Information
+        <span>|</span>
+        Jobs
+        <span>|</span>
+        Contact
+    </footer>
+    <script src="data.js"></script>
+    <script>
+        const articleNo = new URLSearchParams(window.location.search).get("articleNo")
+        if (articleNo == null || articleNo > ArticleData.length) { window.location.href = './' }
+
+
+        const data = ArticleData.find(x => x.id === articleNo)
+
+        document.querySelector('#top h1').textContent = data.title
+        document.querySelector('#top .date').textContent = data.date
+        document.querySelector('img').src = data.img
+        data.para.forEach(para => {
+            let p = document.createElement('p')
+            p.textContent = para
+            document.querySelector('#paragraphs').appendChild(p)
+        })
+
+
+
+
+
+
+
+
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault()
+            if (document.querySelector('input').value = '') {
+                alert("Enter Email")
+            }
+            else {
+                alert("Thanks for subscribing to out News Letter")
+            }
+        })
+    </script>
+</body>
+
+</html>

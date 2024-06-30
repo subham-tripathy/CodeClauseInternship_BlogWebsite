@@ -1,0 +1,51 @@
+#top {
+    width: 900px;
+    margin: auto;
+    text-align: left;
+}
+
+#top h1 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+img {
+    width: 1100px;
+    margin: 20px auto;
+}
+
+#paragraphs p {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 300;
+    width: 800px;
+    margin: 30px auto;
+}
+
+#newsLetter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    background-color: gray;
+    height: 300px;
+}
+
+#newsLetter input {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+#newsLetter button {
+    border: none;
+    outline: none;
+    background-color: gainsboro;
+    padding: 5px 10px;
+    width: max-content;
+    margin: 10px auto;
+}
